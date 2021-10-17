@@ -334,13 +334,17 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    // ‹…À–ßπ˚
     private void onCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("hurtbro");
+            Debug.Log("hit");
         }
     }
+
+ 
+
 
 
 

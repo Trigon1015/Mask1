@@ -69,7 +69,7 @@ public class PatrolState : IState//Ñ²Âß×´Ì¬
         manager.FlipTO(parameter.patrolPoints[patrolPosition]);
         manager.transform.position = Vector2.MoveTowards(manager.transform.position,
             parameter.patrolPoints[patrolPosition].position, parameter.moveSpeed * Time.deltaTime);
-        Debug.Log(parameter.target);
+        //Debug.Log(parameter.target);
         if (parameter.target != null &&
             parameter.target.position.x >= parameter.chasePoints[0].position.x &&
             parameter.target.position.x <= parameter.chasePoints[1].position.x)//Íæ¼Ò½øÈëÊÓÒ°²¢ÇÒÔÚÑ²Âß·¶Î§ÄÚ
