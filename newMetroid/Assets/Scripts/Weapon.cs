@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public UnityEngine.Transform firepoint;
+    public UnityEngine.Transform crouchfirepoint;
     public GameObject bulletPrefabs;
     public GameObject CbulletPrefabs;
 
@@ -47,14 +48,29 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         //shooting logic
-        Instantiate(bulletPrefabs, firepoint.position, firepoint.rotation);
+        if(!PlayerController.isCrouching)
+        {
+            Instantiate(bulletPrefabs, firepoint.position, firepoint.rotation);
+        }
+        else
+        {
+            Instantiate(bulletPrefabs, crouchfirepoint.position, firepoint.rotation);
+        }
 
     }
 
     void CShoot()
     {
         //shooting logic
-        Instantiate(CbulletPrefabs, firepoint.position, firepoint.rotation);
+        if (!PlayerController.isCrouching)
+        {
+            Instantiate(CbulletPrefabs, firepoint.position, firepoint.rotation);
+        }
+        else
+        {
+            Instantiate(CbulletPrefabs, crouchfirepoint.position, firepoint.rotation);
+        }
+        
 
     }
 }

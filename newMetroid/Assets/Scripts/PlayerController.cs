@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     static public Vector2 player;
     public float movementSpeed = 5f;
-
+    public GameObject Firepoint;
     private float InputDirection;
 
     //jumping floats
@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     static public bool isRunShooting;
     static public bool isStandShooting;
     static public bool hurt;
+    static public bool isCrouching;
+    static public bool isShootingUp;
 
     public Rigidbody2D rb;
     private Animator animator;
@@ -131,6 +133,8 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isRunShooting", isRunShooting);
         animator.SetBool("isStandShooting", isStandShooting);
         animator.SetBool("hurt", hurt);
+        animator.SetBool("isCrouching", isCrouching);
+        animator.SetBool("isShootingUp", isShootingUp);
     }
 
     private void CheckInput()
@@ -139,9 +143,49 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             Jump();
+            
+        }
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            isCrouching = true;
+            
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            if(isCrouching)
+            {
+                isCrouching = false;
+            }
+            else
+            {
+                isShootingUp = true;
+            }
 
         }
 
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            isCrouching = false;
+
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            isCrouching = false;
+
+        }
+        if (isCrouching)
+        {
+            movementSpeed = 0;
+        }
+        else
+        {
+            movementSpeed = 5f;
+        }
+        
     }
 
     private void Jump()
@@ -204,8 +248,9 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyMovement()
     {
-
         rb.velocity = new Vector2(movementSpeed * InputDirection, rb.velocity.y);
+        
+       
 
 
     }
@@ -334,14 +379,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    // ‹…À–ßπ˚
-    private void onCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Enemy")
-        {
-            Debug.Log("hit");
-        }
-    }
+   
 
  
 
