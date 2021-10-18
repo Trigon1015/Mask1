@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    
     static public Vector2 player;
     public float movementSpeed = 5f;
     public GameObject Firepoint;
@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour
     static public bool hurt;
     static public bool isCrouching;
     static public bool isShootingUp;
-
+    static public bool hurtplayer;
+    static public float HurtTime = 0;
     public Rigidbody2D rb;
     private Animator animator;
 
@@ -361,7 +362,18 @@ public class PlayerController : MonoBehaviour
             //Debug.Log(activate);
         }
     }
-
+    //private void supertime()
+    //{
+    //    if (PlayerController.hurtplayer == true)
+    //    {
+    //        PlayerController.HurtTime += 1 * Time.deltaTime;
+    //        if (PlayerController.HurtTime >= 2)
+    //        {
+    //            PlayerController.hurtplayer = false;
+    //            PlayerController.HurtTime = 0;
+    //        }
+    //    }
+    //}
     private void Mask1Recover()
     {
         if (ShieldDurability <= 0)
