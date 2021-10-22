@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
         if(info.gameObject.tag == "Player")
         {
             PlayerManager.PlayerHP--;
-            Debug.Log("HP"+PlayerManager.PlayerHP);
+            //Debug.Log("HP"+PlayerManager.PlayerHP);
 
 
 

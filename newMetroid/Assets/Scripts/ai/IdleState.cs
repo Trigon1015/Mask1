@@ -18,7 +18,7 @@ public class IdleState : IState//Õ¾Á¢×´Ì¬
     public void OnEnter()
     {
         parameter.animator.Play("idle");
-        Debug.Log("Idle");
+       // Debug.Log("Idle");
     }
 
     
@@ -31,7 +31,7 @@ public class IdleState : IState//Õ¾Á¢×´Ì¬
         {
             manager.TransitionState(StateType.React);//ÇÐ»»Îª·´Ó¦×´Ì¬
         }
-        if (timer >= parameter.idleTime)//Õ¾Á¢Ê±¼ä×ã¹»
+        if (timer >= parameter.idleTime )//Õ¾Á¢Ê±¼ä×ã¹»
         {
             manager.TransitionState(StateType.Patrol);//ÇÐ»»ÎªÑ²Âß×´Ì¬
         }
@@ -48,7 +48,7 @@ public class IdleState : IState//Õ¾Á¢×´Ì¬
             //        PlayerController.HurtTime = 0;
             //    }
             //}
-            Debug.Log(PlayerController.hurtplayer);
+           // Debug.Log(PlayerController.hurtplayer);
         }
 
     }
@@ -74,7 +74,7 @@ public class PatrolState : IState//Ñ²Âß×´Ì¬
     public void OnEnter()
     {
         parameter.animator.Play("walk");
-        Debug.Log("patrol");
+       // Debug.Log("patrol");
     }
 
 
@@ -108,7 +108,7 @@ public class PatrolState : IState//Ñ²Âß×´Ì¬
             //        PlayerController.HurtTime = 0;
             //    }
             //}
-            Debug.Log(PlayerController.hurtplayer);
+            //Debug.Log(PlayerController.hurtplayer);
         }
     }
 
@@ -137,7 +137,7 @@ public class ChaseState : IState
     public void OnEnter()
     {
         parameter.animator.Play("walk");
-        Debug.Log("chase");
+        //Debug.Log("chase");
        
     }
 
@@ -146,9 +146,11 @@ public class ChaseState : IState
     {
         manager.FlipTO(parameter.target);
         if (parameter.target)
+        {
+           
             manager.transform.position = Vector2.MoveTowards(manager.transform.position,
-            parameter.target.position, parameter.chaseSpeed * Time.deltaTime);//×·»÷Íæ¼Ò
-
+              parameter.target.position, parameter.chaseSpeed * Time.deltaTime);//×·»÷Íæ¼Ò
+        }
         
         if (parameter.target == null ||
             manager.transform.position.x < parameter.chasePoints[0].position.x ||
@@ -175,7 +177,7 @@ public class ChaseState : IState
             //        PlayerController.HurtTime = 0;
             //    }
             //}
-            Debug.Log(PlayerController.hurtplayer);
+           // Debug.Log(PlayerController.hurtplayer);
         }
     }
 
@@ -201,7 +203,7 @@ public class ReactState : IState
     public void OnEnter()
     {
         parameter.animator.Play("walk");
-        Debug.Log("react");
+        //Debug.Log("react");
     }
 
     public void OnUpdate()
@@ -226,7 +228,7 @@ public class ReactState : IState
             //        PlayerController.HurtTime = 0;
             //    }
             //}
-            Debug.Log(PlayerController.hurtplayer);
+            //Debug.Log(PlayerController.hurtplayer);
         }
     }
 
@@ -249,7 +251,7 @@ public class AttackState : IState
     public void OnEnter()
     {
         parameter.animator.Play("attack");
-        Debug.Log("attack");
+        //Debug.Log("attack");
     }
 
     public void OnUpdate()
@@ -275,7 +277,7 @@ public class AttackState : IState
                 //    PlayerController.HurtTime = 0;
                 //}
             }
-           Debug.Log(PlayerController.hurtplayer);
+          // Debug.Log(PlayerController.hurtplayer);
         }
     }
 
