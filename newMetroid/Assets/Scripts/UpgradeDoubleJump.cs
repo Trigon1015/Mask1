@@ -6,6 +6,7 @@ public class  UpgradeDoubleJump: MonoBehaviour
 {
     public ParticleSystem upgradeEffects;
     public Transform playerPosition;
+    
 
     private void OnTriggerEnter2D (Collider2D collider)
     {
@@ -13,7 +14,7 @@ public class  UpgradeDoubleJump: MonoBehaviour
         {
             Debug.Log("upgrade");
             PlayerController.availableJumps = 2;
-            //Instantiate(upgradeEffects, playerPosition);
+            Instantiate(upgradeEffects, playerPosition);
             Destroy(gameObject);
         }
     }

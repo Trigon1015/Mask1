@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier;
     
 
-    static public int availableJumps = 3;
+    static public int availableJumps = 1;
     static public int availableJumpsLeft;
 
     
@@ -36,6 +36,12 @@ public class PlayerController : MonoBehaviour
     static public float HurtTime = 0;
     public Rigidbody2D rb;
     private Animator animator;
+
+    //collider manage
+    public CapsuleCollider2D capsuleCollider;
+    public bool Cc = false;
+    public float ColliderSizeX = 0.1f;
+    public float ColliderSizeY = 0.4f;
 
     //ground check
     public float groundCheckCircle;
@@ -61,6 +67,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         availableJumpsLeft = availableJumps;
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
 
     }
 
@@ -69,7 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         //面具3
         Castle();
-
+        
         //面具1
         Mask1();
         Mask1Recover();
@@ -163,6 +170,7 @@ public class PlayerController : MonoBehaviour
             else
             {
                 isShootingUp = true;
+                
             }
 
         }
@@ -181,12 +189,24 @@ public class PlayerController : MonoBehaviour
         if (isCrouching)
         {
             movementSpeed = 0;
+            
         }
         else
         {
             movementSpeed = 5f;
+            Cc = false;
         }
-        
+
+        if (isCrouching && !Cc)
+        {
+            capsuleCollider.size = new Vector2(ColliderSizeX, ColliderSizeY * 0.7f);
+            Cc = true;
+        }
+        if(!isCrouching)
+        {
+            capsuleCollider.size = new Vector2(ColliderSizeX, ColliderSizeY);
+        }
+
     }
 
     private void Jump()
@@ -391,6 +411,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
+   
    
 
  

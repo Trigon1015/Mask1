@@ -371,8 +371,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000015439285, y: -0.043008856}
-  m_Size: {x: 0.14807622, y: 0.42423877}
+  m_Offset: {x: 0.031606197, y: -0.06629782}
+  m_Size: {x: 0.10482521, y: 0.37766084}
   m_Direction: 0
 --- !u!114 &847142917191089038
 MonoBehaviour:
@@ -388,9 +388,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   Firepoint: {fileID: 1804062272}
-  jumpForce: 8
-  fallMultiplier: 2
-  lowJumpMultiplier: 1
+  jumpForce: 10
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 4
   rb: {fileID: 847142917191089024}
   groundCheckCircle: 0.2
   groundCheck: {fileID: 847142918117737655}
