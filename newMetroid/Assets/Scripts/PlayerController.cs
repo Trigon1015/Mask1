@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 5f;
     public GameObject Firepoint;
     private float InputDirection;
+    float countdown = 1;
+    float countSqaut = 1;
 
     //jumping floats
     public float jumpForce = 8f;
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
     static public bool isCrouching;
     static public bool isShootingUp;
     static public bool hurtplayer;
+    static public bool isCrouchShooting;
     static public float HurtTime = 0;
     public Rigidbody2D rb;
     private Animator animator;
@@ -64,6 +67,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         availableJumpsLeft = availableJumps;
@@ -74,6 +78,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
         //Ãæ¾ß3
         Castle();
         
@@ -128,8 +134,10 @@ public class PlayerController : MonoBehaviour
         ApplyMovement();
         checkEnvironment();
         CheckIfCanJump();
-       
-  
+        AnimationContoller();
+
+
+
 
     }
 
@@ -143,6 +151,8 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("hurt", hurt);
         animator.SetBool("isCrouching", isCrouching);
         animator.SetBool("isShootingUp", isShootingUp);
+        animator.SetBool("isCrouchShooting", isCrouchShooting);
+        
     }
 
     private void CheckInput()
@@ -324,6 +334,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             isRunning = false;
+            isRunShooting = false;
         }
 
 
@@ -411,10 +422,53 @@ public class PlayerController : MonoBehaviour
         
     }
 
-   
-   
+    private void AnimationContoller()
+    {
+        
+        if (isRunning)
+        {
+            isStandShooting = false;
+        }
+        if(isStandShooting)
+        {
+            countdown -= Time.deltaTime;
+            Debug.Log(countdown);
+        }
+        
+        if (countdown <=0)
+        {
+            isStandShooting = false;
+            countdown = 1;
+        }
 
- 
+        if (!isCrouching)
+        {
+            isCrouchShooting = false;
+        }
+
+        if (isCrouchShooting)
+        {
+            countSqaut-= Time.deltaTime;
+            
+        }
+
+        if (countSqaut <= 0)
+        {
+            isCrouchShooting = false;
+            countdown = 1;
+        }
+
+        
+
+
+
+
+
+
+    }
+
+
+
 
 
 

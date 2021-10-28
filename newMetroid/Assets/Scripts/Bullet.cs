@@ -7,10 +7,23 @@ public class Bullet : MonoBehaviour
 
     public float speed = 20f;
     public Rigidbody2D rb;
+    public static float count = 3;
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.right * speed; 
+        rb.velocity = transform.right * speed;
+        
+
+    }
+    private void Update()
+    {
+        count -= 1 * Time.deltaTime;
+        if (count <= 0)
+        {
+            Destroy(gameObject);
+            count = 3;
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D info)
@@ -37,6 +50,10 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
 
         }
+       
+        
+
+
 
     }
 }

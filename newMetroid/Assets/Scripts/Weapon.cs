@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 Shoot();
+                
                 if (PlayerController.isRunning)
                 {
                     PlayerController.isRunShooting = true;
@@ -27,6 +28,10 @@ public class Weapon : MonoBehaviour
                 {
                     PlayerController.isStandShooting = true;
                     PlayerController.isRunShooting = false;
+                }
+                if(PlayerController.isCrouching)
+                {
+                    PlayerController.isCrouchShooting = true;
                 }
 
 
