@@ -7,6 +7,8 @@ public class Weapon : MonoBehaviour
     public UnityEngine.Transform firepoint;
     public UnityEngine.Transform crouchfirepoint;
     public GameObject bulletPrefabs;
+    public GameObject bulletPrefabs1;
+    public GameObject bulletPrefabs2;
     public GameObject CbulletPrefabs;
 
     // Update is called once per frame
@@ -53,14 +55,40 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         //shooting logic
+        
         if(!PlayerController.isCrouching)
         {
-            Instantiate(bulletPrefabs, firepoint.position, firepoint.rotation);
+            if (Shield.bullet ==0 )
+            {
+                Instantiate(bulletPrefabs, firepoint.position, firepoint.rotation);
+            }
+            if (Shield.bullet == 1)
+            {
+                Instantiate(bulletPrefabs1, firepoint.position, firepoint.rotation);
+            }
+            if (Shield.bullet == 2)
+            {
+                Instantiate(bulletPrefabs2, firepoint.position, firepoint.rotation);
+            }
+
         }
         else
         {
-            Instantiate(bulletPrefabs, crouchfirepoint.position, firepoint.rotation);
+            if (Shield.bullet == 0)
+            {
+                Instantiate(bulletPrefabs, crouchfirepoint.position, firepoint.rotation);
+            }
+            if (Shield.bullet == 1)
+            {
+                Instantiate(bulletPrefabs1, crouchfirepoint.position, firepoint.rotation);
+            }
+            if (Shield.bullet == 2)
+            {
+                Instantiate(bulletPrefabs2, crouchfirepoint.position, firepoint.rotation);
+            }
+            
         }
+        
 
     }
 

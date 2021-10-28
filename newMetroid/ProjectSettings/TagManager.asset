@@ -9,6 +9,8 @@ TagManager:
   - Shield
   - Enemy
   - PlayerBullet
+  - Bullet RED
+  - Bullet BLUE
   layers:
   - Default
   - TransparentFX

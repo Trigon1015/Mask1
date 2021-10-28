@@ -154,9 +154,10 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isCrouchShooting", isCrouchShooting);
         
     }
-
+    int i = 1;
     private void CheckInput()
     {
+       
         InputDirection = Input.GetAxisRaw("Horizontal");
         if (Input.GetButtonDown("Jump"))
         {
@@ -194,7 +195,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             isCrouching = false;
-
+            
         }
         if (isCrouching)
         {
@@ -216,8 +217,24 @@ public class PlayerController : MonoBehaviour
         {
             capsuleCollider.size = new Vector2(ColliderSizeX, ColliderSizeY);
         }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            i++;
+            Debug.Log(i);
+            if (i%2==0)
+            {
+                transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
+            }
+            if (i%2==1)
+            {
+                transform.localScale = new Vector3(5f, 5f, 5f);
+            }
+            
+            
+        }
 
     }
+    
 
     private void Jump()
     {
@@ -432,7 +449,7 @@ public class PlayerController : MonoBehaviour
         if(isStandShooting)
         {
             countdown -= Time.deltaTime;
-            Debug.Log(countdown);
+            //Debug.Log(countdown);
         }
         
         if (countdown <=0)
