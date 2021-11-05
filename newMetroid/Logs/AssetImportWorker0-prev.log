@@ -15,11 +15,19 @@ C:/Users/ALW/Documents/GitHub/Mask1/newMetroid
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 2231
 Successfully changed project path to: C:/Users/ALW/Documents/GitHub/Mask1/newMetroid
 C:/Users/ALW/Documents/GitHub/Mask1/newMetroid
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 90.16 ms, found 1 plugins.
+=======
+39834
+Successfully changed project path to: C:/Users/ALW/Documents/GitHub/Mask1/newMetroid
+C:/Users/ALW/Documents/GitHub/Mask1/newMetroid
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 57.19 ms, found 1 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1c1 (a34b99c2c582)
 [Subsystems] Discovering subsystems at path E:/2020.3.3f1c1/Editor/Data/Resources/UnitySubsystems
@@ -36,6 +44,7 @@ Initialize mono
 Mono path[0] = 'E:/2020.3.3f1c1/Editor/Data/Managed'
 Mono path[1] = 'E:/2020.3.3f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/2020.3.3f1c1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -43,11 +52,21 @@ Register platform support module: E:/2020.3.3f1c1/Editor/Data/PlaybackEngines/Wi
 Registered in 0.001354 seconds.
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 80.62 ms, found 1 plugins.
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/2020.3.3f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000959 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 56.94 ms, found 1 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  4.297 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
@@ -55,16 +74,30 @@ Registered in 0.002272 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 71.84 ms, found 1 plugins.
+=======
+- Completed reload, in  1.225 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001784 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 56.39 ms, found 1 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.204 seconds
+=======
+- Completed reload, in  0.996 seconds
+>>>>>>> Stashed changes
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+<<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
 Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -273,5 +306,263 @@ System memory in use after: 139.2 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3649.
 Total: 2.885100 ms (FindLiveObjects: 0.329300 ms CreateObjectMapping: 0.193600 ms MarkObjects: 2.344600 ms  DeleteObjects: 0.017000 ms)
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3140 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.0 MB.
+System memory in use after: 141.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3586.
+Total: 2.717200 ms (FindLiveObjects: 0.502700 ms CreateObjectMapping: 0.254300 ms MarkObjects: 1.892100 ms  DeleteObjects: 0.066800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Warped Caves/Artwork/Sprites/1_1.asset
+  artifactKey: Guid(b3c6bc8a087295748b0a720b301492e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/1_1.asset using Guid(b3c6bc8a087295748b0a720b301492e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541ff11973d8eb2967b196ddd9badd3f') in 0.102531 seconds
+  Import took 0.107186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.520380 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/tile
+  artifactKey: Guid(571a1284db7a85143ad2e5158676f3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/tile using Guid(571a1284db7a85143ad2e5158676f3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a2c29e7076786dd457e6faf50e78aa') in 0.007978 seconds
+  Import took 0.012663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.621676 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/1_0.asset
+  artifactKey: Guid(b93c741b6da93f44086f5d13143b9b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/1_0.asset using Guid(b93c741b6da93f44086f5d13143b9b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eeff46d64fa02dbb84df91c8eca1a33') in 0.020104 seconds
+  Import took 0.026536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.065483 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/1_9.asset
+  artifactKey: Guid(b15a876168dfed44385f3f7676e92a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/1_9.asset using Guid(b15a876168dfed44385f3f7676e92a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4ff8b7c3e1addd1f99fa6276a93891') in 0.014283 seconds
+  Import took 0.019156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000952 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/1_9.asset
+  artifactKey: Guid(b15a876168dfed44385f3f7676e92a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/1_9.asset using Guid(b15a876168dfed44385f3f7676e92a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4ff8b7c3e1addd1f99fa6276a93891') in 0.012246 seconds
+  Import took 0.016897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.108768 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/2_0.asset
+  artifactKey: Guid(ab79d0411bdd17a439162d4d70956b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/2_0.asset using Guid(ab79d0411bdd17a439162d4d70956b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed69a8e8d02226f95947383ba7e4a49') in 0.019845 seconds
+  Import took 0.025878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.104458 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/2_6.asset
+  artifactKey: Guid(f021849b940dbe843af46eb9778a355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/2_6.asset using Guid(f021849b940dbe843af46eb9778a355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42d3b05db22ab6ce87cbd8884e2baf1') in 0.011633 seconds
+  Import took 0.016769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001018 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/2_6.asset
+  artifactKey: Guid(f021849b940dbe843af46eb9778a355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/2_6.asset using Guid(f021849b940dbe843af46eb9778a355f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42d3b05db22ab6ce87cbd8884e2baf1') in 0.007489 seconds
+  Import took 0.012061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.599067 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/3.jpg
+  artifactKey: Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/3.jpg using Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23b2c24b9afc666d652358fe7a5695ae') in 0.071003 seconds
+  Import took 0.075563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.746008 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/3.jpg
+  artifactKey: Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/3.jpg using Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89967e3156e71cb0cf68ebfd5d737b93') in 0.011254 seconds
+  Import took 0.016066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.948617 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/3.jpg
+  artifactKey: Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/3.jpg using Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17473b212a55b0e9551595a4191ad64') in 0.020131 seconds
+  Import took 0.024971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.018508 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/3.jpg
+  artifactKey: Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/3.jpg using Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becef36ba8dd0637312fcd27ad4b6d45') in 0.022417 seconds
+  Import took 0.027409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.929711 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/3.jpg
+  artifactKey: Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/3.jpg using Guid(d281be25031a5d64ea592e2800253fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cf084c2b905c06b7a84af39fefce9a') in 0.020949 seconds
+  Import took 0.025887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.244128 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/4.jpg
+  artifactKey: Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/4.jpg using Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7170219c9cbc9fb7a417475bae287afd') in 0.023394 seconds
+  Import took 0.028431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.696075 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/4.jpg
+  artifactKey: Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/4.jpg using Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae6c1d01f603e532c565e070f7ee1ac') in 0.013271 seconds
+  Import took 0.017983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.566160 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/4.jpg
+  artifactKey: Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/4.jpg using Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3beb2ec4d0fc212ee64c9334e4e7689') in 0.044042 seconds
+  Import took 0.049289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.308006 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/4.jpg
+  artifactKey: Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/4.jpg using Guid(75ec66e611efdb347a224ca903bc8e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cad3094c254135fbb7dc0deed08b2f') in 0.039879 seconds
+  Import took 0.045618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.560798 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/5.jpg
+  artifactKey: Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/5.jpg using Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77792fc3cb1f327e8f60abef42d8c45e') in 0.016906 seconds
+  Import took 0.021874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.209068 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/5.jpg
+  artifactKey: Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/5.jpg using Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59bdf4af8ed962aedab7c2a953c9f4a1') in 0.012590 seconds
+  Import took 0.017447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.620290 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/5.jpg
+  artifactKey: Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/5.jpg using Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d72f78ce9a527f268d446549550fc6e') in 0.016991 seconds
+  Import took 0.021890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.514075 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/5.jpg
+  artifactKey: Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/5.jpg using Guid(ce1ddaef12c7ee244ad49ca1b3c58c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a057d1f0b2bbb4b21a8a4958c2bde6ee') in 0.022232 seconds
+  Import took 0.027788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.450864 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/6.jpg
+  artifactKey: Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/6.jpg using Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50dc88db7dad623431f888919972e165') in 0.017836 seconds
+  Import took 0.022782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.221035 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/6.jpg
+  artifactKey: Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/6.jpg using Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb75b62b90898c632c0bf2c719acf9a') in 0.010902 seconds
+  Import took 0.015595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.558725 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/6.jpg
+  artifactKey: Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/6.jpg using Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3892c753135d3852fe3415198504d2f') in 0.017140 seconds
+  Import took 0.022227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.465559 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/6.jpg
+  artifactKey: Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/6.jpg using Guid(8cd8698e6ff227c4c98ae14b57b68ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832cf3de92841cf3bcd5bfd642d24194') in 0.019388 seconds
+  Import took 0.024160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.783165 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/7.jpg
+  artifactKey: Guid(1003e8a9b8443e844bd5e94510a1517f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/7.jpg using Guid(1003e8a9b8443e844bd5e94510a1517f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0559ae92c4a92670a7f4a3f9e4cd4e7') in 0.017235 seconds
+  Import took 0.022061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.960352 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/7.jpg
+  artifactKey: Guid(1003e8a9b8443e844bd5e94510a1517f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/7.jpg using Guid(1003e8a9b8443e844bd5e94510a1517f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305162ad4b9cca336254295485c47c5c') in 0.010090 seconds
+  Import took 0.014837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.834911 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/7.jpg
+  artifactKey: Guid(1003e8a9b8443e844bd5e94510a1517f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/7.jpg using Guid(1003e8a9b8443e844bd5e94510a1517f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f9a9459f76a2c3094cd76cbcea538b') in 0.018145 seconds
+  Import took 0.022818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.754399 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/8.jpg
+  artifactKey: Guid(29071fcc497e0f4498bd050b2608f20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/8.jpg using Guid(29071fcc497e0f4498bd050b2608f20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35cc4fa3646c0ad33b5881b0f13243fa') in 0.017141 seconds
+  Import took 0.022007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.912693 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/8.jpg
+  artifactKey: Guid(29071fcc497e0f4498bd050b2608f20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/8.jpg using Guid(29071fcc497e0f4498bd050b2608f20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4062e9808c314cfe1ea5a0a8efec3285') in 0.012254 seconds
+  Import took 0.017092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.472812 seconds.
+  path: Assets/Warped Caves/Artwork/Sprites/8.jpg
+  artifactKey: Guid(29071fcc497e0f4498bd050b2608f20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Warped Caves/Artwork/Sprites/8.jpg using Guid(29071fcc497e0f4498bd050b2608f20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fede7cb285467c6481b14f5c9a497f06') in 0.025354 seconds
+  Import took 0.030476 seconds .
+>>>>>>> Stashed changes
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
